@@ -8,3 +8,12 @@ On receipt of the UDP package the python application will control the touch scre
 
 Prerequisites:
 $ pip3 install rpi-backlight
+
+Install:
+
+copy backlight.service file to /etc/systemd/system/
+copy backlight.py to /opt/backlight
+chmod +x /opt/backlight.py
+systemctl enable backlight
+systemctl start backlight
+
